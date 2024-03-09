@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DanGPT - Dan Abramov as an AI",
+  title: "Json Cohen GPT",
   description: "An example of RAG-based GenAI.",
   openGraph: {
     type: "website",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         url: "https://dangpt.vercel.app/og.jpg",
         width: 1200,
         height: 600,
-        alt: "DanGPT",
+        alt: "JsonCohenGPT",
       },
     ],
   },

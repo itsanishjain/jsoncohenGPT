@@ -21,7 +21,7 @@ export const Form = ({ query }: Props) => {
       }}
     >
       <input
-        placeholder="Explain RSCs to me"
+        placeholder="Who is Json Cohen"
         name="q"
         autoComplete="off"
         type="text"
