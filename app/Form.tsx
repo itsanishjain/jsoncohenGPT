@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import Image from "next/image";
 type Props = {
   query: string;
 };
@@ -33,10 +33,14 @@ export const Form = ({ query }: Props) => {
         type="submit"
         disabled={pending}
         className={`${
-          pending ? "animate-spin" : ""
-        } bg-black rounded hover:bg-red-500 hover:text-black text-red-400 px-4 border-2 border-red-500`}
-        value={pending ? "Asking..." : "Ask"}
+          pending ? "" : ""
+        } bg-black rounded hover:bg-blue-500 text-white px-4 border-2 border-blue-500`}
+        value={pending ? "Asking...." : "Ask"}
       />
+
+      {pending && (
+        <Image alt="loading.." width={25} height={25} src="/spinner.svg" />
+      )}
     </form>
   );
 };
